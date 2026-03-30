@@ -4,7 +4,7 @@
         "id": 1,
         "navn": "Pasta Carbonara",
         "ingredienser": ["pasta", "eggs", "bacon"],
-        "instruksjoner": "Mix and cook...",
+        "instruksjoner": ["Mix and cook..."],
         "serveringer": 4,
         "tid": "20 mins",
         "temp": "180°C",

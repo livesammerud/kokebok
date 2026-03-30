@@ -9,6 +9,10 @@ header{
     border-bottom: 1px solid white;
 }
 
+.front_header{
+    border-bottom: none;
+}
+
 body {
     margin: 0; /* Remove default body margin */@body {
         color: white;  /* or any light color you want */
@@ -40,6 +44,17 @@ h1{
     padding-left: 20px;
 }
 
+.front_page{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: silver;
+    font-weight: 700;
+    font-size: 6.0rem;
+    margin-top: -35px;
+    padding-left: 0px;
+}
+
 h2 {
     color: white;
     align-items: center;
@@ -48,6 +63,13 @@ h2 {
     font-weight: 700;
     font-size: 4.0rem;
     margin-left: 200px;
+}
+
+.tiles_h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 0px;
 }
 
 .page_header{
@@ -147,22 +169,15 @@ hr{
 }
 
 .recipe-card {
-    background: white;
     padding: 25px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.recipe-card h2 {
-    color: #d9534f;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #d9534f;
-    padding-bottom: 10px;
+    font-size: 2.0rem;
 }
 
 .recipe-card h3 {
-    color: #333;
+    color: white;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -170,16 +185,23 @@ hr{
 .recipe-meta {
     display: flex;
     gap: 20px;
-    color: #666;
+    color: white;
     margin-bottom: 15px;
     font-size: 0.95em;
+    align-items: center;
+    justify-content: center;
 }
 
 .recipe-card ul, .recipe-card ol {
-    margin-left: 20px;
     line-height: 1.8;
 }
 
 .recipe-card li {
     margin-bottom: 8px;
+    color: white;
+}
+
+.tb_column{
+    padding-left: 100px;
+    border-left: 1px solid white;
 }
