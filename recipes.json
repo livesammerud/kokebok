@@ -3,7 +3,7 @@
       {
         "id": 1,
         "navn": "Pasta Carbonara",
-        "ingredients": ["pasta", "eggs", "bacon"],
+        "ingredienser": ["pasta", "eggs", "bacon"],
         "instruksjoner": "Mix and cook...",
         "serveringer": 4,
         "tid": "20 mins",

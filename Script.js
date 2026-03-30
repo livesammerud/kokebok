@@ -15,7 +15,7 @@ function displayRecipes(recipes) {
                 <h2>${recipe.navn}</h2>
                 <div class="recipe-meta">
                     <span>⏱️ ${recipe.tid}</span>
-                    <span>🍽️ Servings: ${recipe.servinger}</span>
+                    <span>🍽️ Servings: ${recipe.serveringer}</span>
                 </div>
                 
                 <h3>Ingredients:</h3>
