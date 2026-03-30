@@ -1,11 +1,13 @@
-fetch('recipes.json')
-    .then(response => response.json())
-    .then(data => {
-        displayRecipes(data.recipes);
-    })
-    .catch(error => console.error('Error loading recipes:', error));
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('recipes.json')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Recipes loaded:', data);
+            displayRecipes(data.recipes);
+        })
+        .catch(error => console.error('Error loading recipes:', error));
+});
 
-// Function to display recipes
 function displayRecipes(recipes) {
     const container = document.getElementById('recipes-container');
     
