@@ -1,0 +1,68 @@
+html {
+    /* Makes 1rem = 10px, easy for math (e.g., 16px = 1.6rem) */
+    font-size: 62.5%;
+    background-color: black;
+  }
+
+.Title{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: silver;
+    font-weight: 700;
+    font-size: 6.0rem;
+}
+
+.Description{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: silver;
+    font-size: 3.0rem;
+    text-align: center;
+}
+
+.dashboard-container {
+    display: grid;
+    /* Creates columns of equal size, automatically adjusting to screen size */
+    grid-template-columns: repeat(3, 1fr); /* Always 4 columns */
+    gap: 20px; /* Space between the tiles */
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.tile {
+    background-color: #fff;
+    border-radius: 8px; /* Softened corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    padding: 15px;
+    height: 200px; /* Fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes content vertically */
+    cursor: pointer; /* Indicates interactivity */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.tile:hover {
+    transform: translateY(-5px); /* Lifts the tile on hover */
+}
+
+.tile h2 {
+    font-size: 2.6rem;
+    color: #333;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.tile p {
+    font-size: 2.0rem;
+    color: #666;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
