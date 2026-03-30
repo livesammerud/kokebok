@@ -14,9 +14,8 @@ header{
 }
 
 body {
-    margin: 0; /* Remove default body margin */@body {
-        color: white;  /* or any light color you want */
-    }
+    margin: 0; /* Remove default body margin */
+    color: white;  /* or any light color you want */
 }
 
 .main {
