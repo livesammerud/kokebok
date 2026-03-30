@@ -4,13 +4,58 @@ html {
     background-color: black;
   }
 
-.Title{
+header{
+    height: 100px;
+}
+
+body {
+    margin: 0; /* Remove default body margin */
+}
+
+.main {
+    margin-left: 200px; /* Same as the sidebar width to prevent content overlap */
+    padding: 15px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
     align-items: center;
     justify-content: center;
     display: flex;
     color: silver;
     font-weight: 700;
     font-size: 6.0rem;
+    margin-top: -50px;
+}
+
+.page_header{
+    margin-left: 200px;
+}
+
+.btn_home{
+    height: 50px;
+    width: 100px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+hr{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: lightblue;
 }
 
 .Description{
@@ -43,6 +88,7 @@ html {
     justify-content: space-between; /* Distributes content vertically */
     cursor: pointer; /* Indicates interactivity */
     transition: transform 0.2s; /* Smooth hover effect */
+    align-items: center;
 }
 
 .tile:hover {
@@ -65,4 +111,61 @@ html {
     justify-content: center;
     display: flex;
     text-align: center;
+}
+
+.Sidepanel{
+    font-size: 2.0rem;
+}
+
+.sidebar {
+    width: 200px; /* Set a fixed width for the sidebar */
+    background-color: #111; /* Dark background color */
+    color: white;
+    padding-top: 20px;
+    position: fixed; /* Fix the position during scroll */
+    height: 100%; /* Full height */
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+#recipes-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.recipe-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.recipe-card h2 {
+    color: #d9534f;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d9534f;
+    padding-bottom: 10px;
+}
+
+.recipe-card h3 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 20px;
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
+.recipe-card ul, .recipe-card ol {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.recipe-card li {
+    margin-bottom: 8px;
 }
