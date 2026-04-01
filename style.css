@@ -5,8 +5,10 @@ html {
   }
 
 header{
-    height: 100px;
-    border-bottom: 1px solid white;
+    max-height: 100px;
+    border-bottom: 1px solid #333;
+    align-items: center;
+    display: flex;
 }
 
 .front_header{
@@ -72,7 +74,9 @@ h2 {
 }
 
 .page_header{
-    margin-left: 200px;
+    margin-left: 80px;
+    margin-bottom: -1px;
+    margin-top: 10px;
 }
 
 .btn_home{
@@ -177,18 +181,20 @@ hr{
 
 .recipe-card h3 {
     color: white;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
 .recipe-meta {
     display: flex;
-    gap: 20px;
+    gap: 50px;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 60px;
     font-size: 0.95em;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    padding-left: 100px;
 }
 
 .recipe-card ul, .recipe-card ol {
@@ -201,6 +207,15 @@ hr{
 }
 
 .tb_column{
-    padding-left: 100px;
+    padding-left: 60px;
     border-left: 1px solid white;
+}
+
+img{
+    max-width: 800px;
+    max-height: 300px;
+}
+
+.ingr{
+    padding-right: 60px;
 }
