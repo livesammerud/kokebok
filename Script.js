@@ -18,7 +18,7 @@ function getCategory() {
         'Måltider.html': 'Måltider',
         'Kaker.html': 'Kaker',
         'Kjeks.html': 'Kjeks',
-        'Gjærbakst.html': 'Gjærbakst',
+        'Bakst.html': 'Bakst',
         'Desserter.html': 'Desserter'
     };
     return categoryMap[page] || 'Måltider';

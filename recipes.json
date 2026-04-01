@@ -2,7 +2,7 @@
     "recipes": [
       {
         "id": 1,
-        "kategori": "Måltid",
+        "kategori": "Måltider",
         "navn": "Pasta Carbonara",
         "ingredienser": ["pasta", "eggs", "bacon"],
         "instruksjoner": ["Mix and cook..."],
@@ -13,7 +13,7 @@
       },
       {
         "id": 2,
-        "kategori": "Kake",
+        "kategori": "Kaker",
         "navn": "Kake",
         "ingredienser": ["pasta", "eggs", "bacon"],
         "instruksjoner": ["Mix and cook..."],
@@ -46,7 +46,7 @@
       },
       {
         "id": 5,
-        "kategori": "Gjærbakst",
+        "kategori": "Bakst",
         "navn": "Boller",
         "ingredienser": ["pasta", "eggs", "bacon"],
         "instruksjoner": ["Mix and cook..."],
