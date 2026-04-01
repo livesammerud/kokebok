@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             console.log('Recipes loaded:', data);
-            const category = getCategory();
-            const filteredRecipes = data.recipes.filter(r => r.kategori === category);
+            const kategori = getCategory();
+            const filteredRecipes = data.recipes.filter(r => r.kategori === kategori);
             displayRecipes(filteredRecipes);
-            displaySidebar(data.recipes, category);
+            displaySidebar(filteredRecipes);
         })
         .catch(error => console.error('Error loading recipes:', error));
 });
@@ -66,9 +66,8 @@ function displayRecipes(recipes) {
     });
 }
 
-
 function displaySidebar(recipes) {
-    const sidebar = document.querySelector('aside');
+    const sidebar = document.getElementById('aside');
     
     let sidebarHTML = '<ul>';
     recipes.forEach(recipe => {
